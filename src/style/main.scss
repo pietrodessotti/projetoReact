@@ -1,13 +1,13 @@
 @import "./variables";
-@font-face {
-    font-family: Gotham;
-    src: url(/projetod1/src/components/Table/Journey/assets/fonts/Gotham-Bold.ttf);
-}
+// @font-face {
+//     font-family: Gotham;
+//     src: url(/projetod1/src/components/Table/Journey/assets/fonts/Gotham-Bold.ttf);
+// }
 
-@font-face {
-    font-family: Gotham Book;
-    src: url(/projetod1/src/components/Table/Journey/assets/fonts/Gotham-Book.ttf);
-}
+// @font-face {
+//     font-family: Gotham Book;
+//     src: url(/projetod1/src/components/Table/Journey/assets/fonts/Gotham-Book.ttf);
+// }
 
 * {
     margin: 0;
@@ -16,247 +16,18 @@
 }
 
 body {
-    font-family: Gotham;
+    // font-family: Gotham;
     background: #fafbff;
     font-size: 62.5%;
 }
 
-header {
-    z-index: 3;
-    position: fixed;
-    height: 100%;
+// header {
+//     z-index: 3;
+//     position: fixed;
+//     height: 100%;
 
-    .sidebar {
-        background: transparent linear-gradient(90deg, #00e1ff 0%, #117eff 100%) 0% 0% no-repeat padding-box;
-    }
+// }
 
-    .sidebar-menu {
-        background: $sidebarColor;
-        width: 70px;
-        height: 100%;
-
-        border-top: 4px solid red;
-        border-bottom: 4px solid red;
-
-        .logo {
-            img {
-                width: 50px;
-                max-width: 30px;
-                padding-top: 15px;
-                padding-bottom: 40px;
-            }
-        }
-
-        img {
-            &:hover {
-                cursor: pointer;
-            }
-
-            filter: invert(100%);
-            display: block;
-            width: 20px;
-            margin: 25px auto;
-        }
-
-        li {
-            list-style: none;
-        }
-
-        .separator li {
-            &:last-child {
-                width: 35%;
-                margin: auto;
-                border-bottom: 2px solid $colorBlue;
-            }
-        }
-
-        .footer-menu {
-            margin-top: 200px;
-        }
-    }
-}
-
-.menu {
-    z-index: 2;
-    width: 100%;
-    padding: 40px 150px;
-    padding-top: 40px;
-    position: fixed;
-
-    background: $backgroundColor;
-
-    .contentMenu {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-
-        .user {
-            display: flex;
-            align-items: center;
-
-            span {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-
-                font-size: 14px;
-                color: white;
-                background: $colorBlue;
-                width: 20px;
-                height: 20px;
-                border-radius: 50%;
-            }
-
-            img {
-                height: 26px;
-                padding: 3px 10px;
-                background: #ffffff;
-                margin: auto 15px;
-                border-radius: 4px;
-            }
-        }
-
-        .search {
-            display: flex;
-            align-items: center;
-
-            input {
-                height: 35px;
-                width: 100%;
-            }
-
-            input,
-            button {
-                margin: 0 15px;
-                border: none;
-
-                &:hover {
-                    cursor: pointer;
-                }
-
-                &:focus {
-                    outline: none;
-                }
-            }
-
-            button {
-                margin-left: 20px;
-                height: 35px;
-                width: 150px;
-                background: $colorBlue;
-                color: white;
-                border-radius: 4px;
-
-                &:hover {
-                    background: linear-gradient(280deg, $colorBlue, $borderBlue2);
-                }
-
-                img {
-                    width: 10px;
-                    filter: invert(100%);
-                }
-            }
-
-            .searchInput {
-                i {
-                    transform: rotate(100grad);
-                    color: $colorBlue;
-                    margin-left: 10px;
-                    margin-right: -10px;
-                    font-size: 15px;
-                }
-
-                width: 300px;
-                display: flex;
-                align-items: center;
-                justify-content: justify;
-                background: $backgroundImage;
-                border: 1px solid gray;
-                border-radius: 4px;
-            }
-        }
-    }
-}
-
-#container {
-    margin-left: 150px;
-
-    #filter {
-        z-index: 3;
-        position: fixed;
-        top: 130px;
-
-        h1 {
-            margin-left: 10px;
-            margin-bottom: 20px;
-        }
-
-        .options {
-            height: 25px;
-            cursor: pointer;
-            margin: 10px 0;
-            font-family: Gotham Book;
-            color: $textColor;
-            width: 150px;
-            display: flex;
-            align-items: center;
-
-            img {
-                cursor: pointer;
-
-                font-size: 13px;
-                width: 20px;
-                margin: 10px 10px;
-            }
-
-            span {
-                background: $filterJouner;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 15px;
-                height: 15px;
-                border-radius: 50%;
-                margin: auto;
-                margin-right: 20px;
-            }
-        }
-    }
-
-    #journey {
-        position: absolute;
-        top: 140px;
-
-        #data-table {
-            margin-left: 350px;
-            margin-top: 20px;
-            border-spacing: 0 5px;
-            font-size: 13px;
-
-            thead th {
-                padding-left: 10px;
-                text-align: justify;
-                color: $titleTable;
-            }
-
-            #tableFinances td {
-                background: white;
-                width: 200px;
-                color: $textColor;
-                padding: 10px;
-                margin: 50px;
-
-                &:first-child {
-                    border-radius: 5px 0 0 5px;
-                }
-
-                &:last-child {
-                    border-radius: 0 5px 5px 0;
-                }
-            }
-        }
-    }
-}
 
 .modalOverlay {
     width: 100vw;
@@ -286,7 +57,7 @@ header {
             .btnCancel,
             .btnContinue {
                 color: $titleTable;
-                font-family: Gotham;
+                // font-family: Gotham;
                 border: none;
                 background: transparent;
             }
@@ -309,7 +80,7 @@ header {
         }
 
         h1 {
-            font-family: Gotham;
+            // font-family: Gotham;
             font-size: 13px;
             margin-left: 10px;
             margin-bottom: 5px;
@@ -326,7 +97,7 @@ header {
 
         input,
         label {
-            font: Gotham;
+            // font: Gotham;
             font-weight: normal;
             color: $titleTable;
             width: 95%;

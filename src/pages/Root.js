@@ -5,13 +5,13 @@ import {
     Route,
 } from 'react-router-dom';
 
-import PagesIndexSearch from './Index/Search/Search';
+import Home from './Home';
 
 const Root = () => {
     return (
         <Router>
             <Switch>
-                <Route path="/" component={PagesIndexSearch} />
+                <Route path="/" component={Home} />
             </Switch>
         </Router>
     );

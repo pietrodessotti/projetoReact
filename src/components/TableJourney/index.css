@@ -1,0 +1,36 @@
+/* ========= COLORS INDEX ======= */
+/* ======= COLORS SVG ======== */
+#journey {
+  position: absolute;
+  top: 140px;
+}
+
+#journey #data-table {
+  margin-left: 350px;
+  margin-top: 20px;
+  border-spacing: 0 5px;
+  font-size: 13px;
+}
+
+#journey #data-table thead th {
+  padding-left: 10px;
+  text-align: justify;
+  color: #9196AB;
+}
+
+#journey #data-table #tableFinances td {
+  background: white;
+  width: 200px;
+  color: #3E4157;
+  padding: 10px;
+  margin: 50px;
+}
+
+#journey #data-table #tableFinances td:first-child {
+  border-radius: 5px 0 0 5px;
+}
+
+#journey #data-table #tableFinances td:last-child {
+  border-radius: 0 5px 5px 0;
+}
+/*# sourceMappingURL=index.css.map */

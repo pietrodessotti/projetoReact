@@ -1,25 +1,27 @@
 import React from 'react';
-import './Menu';
-import '../../../style/main.css'
+import 'index.css';
 
-const Menu = ({ contentMenu }) => (
+import logo from '../../assets/images/acme-logo.png';
+import plus from '../../assets/icons/plus.svg'
+
+const Header = () => (
     <div className="menu">
         <div className="contentMenu">
             <div className="user">
                 <span>A</span>
-                    <img src={contentMenu.logo} alt={contentMenu.logoAlt} />
+                    <img src={logo} alt='Logo Acme do Projeto D1' />
             </div>
             <div className="search">
                 <div className="searchInput">
                     <i className="material-icons">search</i>
                     <input type="text" placeholder="Buscar" />
                 </div>
-                <button className="newJourney" onClick="addJourney"><img src={contentMenu.mais}
-                    alt={contentMenu.maisAlt} /> Nova Jornada</button>
+                <button className="newJourney" onClick="addJourney"><img src={plus}
+                    alt='Botão nova jornada do Projeto D1' /> Nova Jornada</button>
             </div>
         </div>
     </div>
 
 );
 
-export default Menu;
+export default Header;

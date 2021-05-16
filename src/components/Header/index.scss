@@ -1,0 +1,103 @@
+@import "../../style/variables.scss";
+
+.menu {
+    z-index: 2;
+    width: 100%;
+    padding: 40px 150px;
+    padding-top: 40px;
+    position: fixed;
+
+    background: $backgroundColor;
+
+    .contentMenu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .user {
+            display: flex;
+            align-items: center;
+
+            span {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                font-size: 14px;
+                color: white;
+                background: $colorBlue;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+            }
+
+            img {
+                height: 26px;
+                padding: 3px 10px;
+                background: #ffffff;
+                margin: auto 15px;
+                border-radius: 4px;
+            }
+        }
+
+        .search {
+            display: flex;
+            align-items: center;
+
+            input {
+                height: 35px;
+                width: 100%;
+            }
+
+            input,
+            button {
+                margin: 0 15px;
+                border: none;
+
+                &:hover {
+                    cursor: pointer;
+                }
+
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            button {
+                margin-left: 20px;
+                height: 35px;
+                width: 150px;
+                background: $colorBlue;
+                color: white;
+                border-radius: 4px;
+
+                &:hover {
+                    background: linear-gradient(280deg, $colorBlue, $borderBlue2);
+                }
+
+                img {
+                    width: 10px;
+                    filter: invert(100%);
+                }
+            }
+
+            .searchInput {
+                i {
+                    transform: rotate(100grad);
+                    color: $colorBlue;
+                    margin-left: 10px;
+                    margin-right: -10px;
+                    font-size: 15px;
+                }
+
+                width: 300px;
+                display: flex;
+                align-items: center;
+                justify-content: justify;
+                background: $backgroundImage;
+                border: 1px solid gray;
+                border-radius: 4px;
+            }
+        }
+    }
+}

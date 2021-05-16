@@ -1,0 +1,41 @@
+#filter {
+    z-index: 3;
+    position: fixed;
+    top: 130px;
+
+    h1 {
+        margin-left: 10px;
+        margin-bottom: 20px;
+    }
+
+    .options {
+        height: 25px;
+        cursor: pointer;
+        margin: 10px 0;
+        font-family: Gotham Book;
+        color: $textColor;
+        width: 150px;
+        display: flex;
+        align-items: center;
+
+        img {
+            cursor: pointer;
+
+            font-size: 13px;
+            width: 20px;
+            margin: 10px 10px;
+        }
+
+        span {
+            background: $filterJouner;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            margin: auto;
+            margin-right: 20px;
+        }
+    }
+}

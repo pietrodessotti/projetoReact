@@ -1,0 +1,48 @@
+/* ========= COLORS INDEX ======= */
+/* ======= COLORS SVG ======== */
+#sidebar {
+  background: transparent -webkit-gradient(linear, left top, right top, from(#00e1ff), to(#117eff)) 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(90deg, #00e1ff 0%, #117eff 100%) 0% 0% no-repeat padding-box;
+}
+
+#sidebar-menu {
+  background: #1A1731;
+  width: 70px;
+  height: 100%;
+  border-top: 4px solid red;
+  border-bottom: 4px solid red;
+}
+
+#sidebar-menu .logo img {
+  width: 50px;
+  max-width: 30px;
+  padding-top: 15px;
+  padding-bottom: 40px;
+}
+
+#sidebar-menu img {
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+  display: block;
+  width: 20px;
+  margin: 25px auto;
+}
+
+#sidebar-menu img:hover {
+  cursor: pointer;
+}
+
+#sidebar-menu li {
+  list-style: none;
+}
+
+#sidebar-menu .separator li:last-child {
+  width: 35%;
+  margin: auto;
+  border-bottom: 2px solid #117EFF;
+}
+
+#sidebar-menu .footer-menu {
+  margin-top: 200px;
+}
+/*# sourceMappingURL=index.css.map */

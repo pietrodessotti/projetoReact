@@ -1,9 +1,10 @@
 import React from 'react';
-import './Journey'
+import 'index.css';
+
 
 const TableJourney = ({ journey }) => (
     <div className="container">
-        <section div="journey">
+        <section id="journey">
             <table id="data-table">
                 <thead>
                     <tr>
@@ -13,15 +14,14 @@ const TableJourney = ({ journey }) => (
                         <th>Status</th>
                     </tr>
                 </thead>
-                <tbody id="tableFinances">
+                {/* <tbody id="tableFinances">
                     <tr><td>{journey.name}</td>
                         <td>{journey.recipients}</td>
                         <td>{journey.success}</td>
                         <td>{journey.status}</td></tr>
-                </tbody>
+                </tbody> */}
             </table>
         </section>
-
     </div>
 )
 
