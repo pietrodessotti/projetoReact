@@ -1,5 +1,5 @@
+import Tbody from 'components/TableJourney/Tbody';
 import React, { useState } from 'react';
-
 
 const name = [
     "Cobrança",
@@ -20,9 +20,9 @@ const Search = () => {
     return (
         <div className="Search">
             <input type="text" placeholder="Busca" value={busca} onChange={(ev) => setBusca(ev.target.value)} />
-            {filterName.map((name) => (
+            <Tbody />
                 <td key={name}>{name}</td>
-            ))}
+            ))
         </div>
     )
 }

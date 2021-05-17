@@ -19,17 +19,22 @@
         width: 70px;
         height: 100%;
 
-
         .logo {
             img {
+                filter: invert(100%) sepia(201%) saturate(978%) hue-rotate(100deg) brightness(504%) contrast(500%);
                 width: 30px;
                 padding-top: 15px;
                 padding-bottom: 40px;
+
+                &:hover {
+                    filter: invert(100%) sepia(201%) saturate(978%) hue-rotate(100deg) brightness(504%) contrast(500%);
+                }
             }
         }
 
         img {
             &:hover {
+                filter: invert(27%) sepia(51%) saturate(2078%) hue-rotate(180deg) brightness(104%) contrast(507%);
                 cursor: pointer;
             }
 
@@ -41,6 +46,10 @@
 
         li {
             list-style: none;
+
+            Tooltip {
+                background-color: red;
+            }
         }
 
         .separator li {

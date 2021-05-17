@@ -1,0 +1,23 @@
+@import '../../style/variables.scss';
+
+
+#new-journey-modal-cointainer {
+    display: flex;
+    flex-direction: column;
+    color: $titleTable;
+
+
+    #new-journey-modal-title {
+        margin-bottom: 0.5rem;
+    }
+
+    #new-journey-modal-description {
+        font-size: 0.8em;
+        margin-bottom: 1em;
+    }
+
+    #new-journey-modal-extra-information {
+        margin-top: 0.4em;
+        margin-bottom: 1em;
+    }
+}

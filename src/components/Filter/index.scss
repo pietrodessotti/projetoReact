@@ -23,11 +23,21 @@
     }
 
     .active {
-        background: $backgroundImage;
+        color: blue;
+        background: $backgroundColor;
+        
+        p {
+            font-family: Gotham;
+            color: $colorBlue;
+        }
     }
 
     .disabled {
         background: $backgroundColor;
+
+        p {
+            font-family: Gotham Book;
+        }
     }
 
     .options {
@@ -46,9 +56,7 @@
         }
 
         p {
-            color: $textColor;
             font-size: 13px;
-            font-family: Gotham Book;
         }
 
         span {

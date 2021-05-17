@@ -24,9 +24,16 @@
 }
 
 #sidebar #sidebar-menu .logo img {
+  -webkit-filter: invert(100%) sepia(201%) saturate(978%) hue-rotate(100deg) brightness(504%) contrast(500%);
+          filter: invert(100%) sepia(201%) saturate(978%) hue-rotate(100deg) brightness(504%) contrast(500%);
   width: 30px;
   padding-top: 15px;
   padding-bottom: 40px;
+}
+
+#sidebar #sidebar-menu .logo img:hover {
+  -webkit-filter: invert(100%) sepia(201%) saturate(978%) hue-rotate(100deg) brightness(504%) contrast(500%);
+          filter: invert(100%) sepia(201%) saturate(978%) hue-rotate(100deg) brightness(504%) contrast(500%);
 }
 
 #sidebar #sidebar-menu img {
@@ -38,11 +45,17 @@
 }
 
 #sidebar #sidebar-menu img:hover {
+  -webkit-filter: invert(27%) sepia(51%) saturate(2078%) hue-rotate(180deg) brightness(104%) contrast(507%);
+          filter: invert(27%) sepia(51%) saturate(2078%) hue-rotate(180deg) brightness(104%) contrast(507%);
   cursor: pointer;
 }
 
 #sidebar #sidebar-menu li {
   list-style: none;
+}
+
+#sidebar #sidebar-menu li Tooltip {
+  background-color: red;
 }
 
 #sidebar #sidebar-menu .separator li:last-child {

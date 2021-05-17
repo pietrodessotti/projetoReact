@@ -9,43 +9,24 @@ import bed from '../../assets/icons/bed.svg';
 import check from '../../assets/icons/check.svg';
 
 
+const Filter = ({ journeys, handleClickJourney }) => {
+    const icons = [all, paperPlane, playCircle, pen, bed, check];
 
-const Filter = () => (
-    <div id="filter">
-        <h1>Jornadas</h1>
-        <div className="active"></div>
-        <div className="disabled"></div>
-        <div className="options">
-            <img src={all} alt='Icone Todos os filtros do Projeto D1' />
-            <p>Todas</p>
-            <span>12</span>
+    return (
+        <div id="filter">
+            <h1>Jornadas</h1>
+            {journeys && journeys.journeysInfo && journeys.journeysInfo.length > 0 ? journeys.journeysInfo.map((journey, i) => (
+                <div className={`options ${journeys.journeysApplied[i] ? 'active' : 'disabled'}`}
+                    key={journey.id}
+                    onClick={() => handleClickJourney(i)}>
+                    <img src={icons[i]} alt='' />
+                    <p>{journey.name}</p>
+                    <span>{journey.quantity}</span>
+                </div>
+            ))
+            : null}
         </div>
-        <div className="options">
-            <img src={paperPlane} alt='Icone Enviar do Projeto D1' />
-            <p>Enviando</p>
-            <span>12</span>
-        </div>
-        <div className="options">
-            <img src={playCircle} alt='Icone Ativadas do Projeto D1' />
-            <p>Ativadas</p>
-            <span>12</span>
-        </div>
-        <div className="options">
-            <img src={pen} alt='Icone Configurando do Projeto D1' />
-            <p>Configurando</p>
-            <span>12</span>
-        </div>
-        <div className="options">
-            <img src={bed} alt='Icone Ociosa do Projeto D1' />
-            <p>Ociosa</p>
-            <span>12</span>
-        </div>
-        <div className="options">
-            <img src={check} alt='Icone Concluída do Projeto D1' />
-            <p>Concluída</p>
-            <span>12</span>
-        </div>
-    </div>
-);
+    );
+};
 
 export default Filter;

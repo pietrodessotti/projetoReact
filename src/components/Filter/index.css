@@ -25,11 +25,21 @@
 }
 
 #filter .active {
-  background: #FFFFFF;
+  color: blue;
+  background: #FAFBFF;
+}
+
+#filter .active p {
+  font-family: Gotham;
+  color: #117EFF;
 }
 
 #filter .disabled {
   background: #FAFBFF;
+}
+
+#filter .disabled p {
+  font-family: Gotham Book;
 }
 
 #filter .options {
@@ -53,9 +63,7 @@
 }
 
 #filter .options p {
-  color: #3E4157;
   font-size: 13px;
-  font-family: Gotham Book;
 }
 
 #filter .options span {
