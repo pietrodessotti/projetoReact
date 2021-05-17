@@ -1,41 +1,68 @@
+@import "../../style/variables.scss";
+@font-face {
+    font-family: Gotham;
+    src: url(../../assets/fonts/Gotham-Bold.ttf);
+}
+
+@font-face {
+    font-family: Gotham Book;
+    src: url(../../assets/fonts/Gotham-Book.ttf);
+}
+
 #filter {
+    font-size: 62.5%;
     z-index: 3;
     position: fixed;
     top: 130px;
+    left: 150px;
 
     h1 {
+        font-size: 16px;
         margin-left: 10px;
         margin-bottom: 20px;
+    }
+
+    .active {
+        background: $backgroundImage;
+    }
+
+    .disabled {
+        background: $backgroundColor;
     }
 
     .options {
         height: 25px;
         cursor: pointer;
         margin: 10px 0;
-        font-family: Gotham Book;
-        color: $textColor;
-        width: 150px;
+        width: 165px;
         display: flex;
         align-items: center;
 
         img {
             cursor: pointer;
-
             font-size: 13px;
             width: 20px;
             margin: 10px 10px;
         }
 
+        p {
+            color: $textColor;
+            font-size: 13px;
+            font-family: Gotham Book;
+        }
+
         span {
+            font-size: 10px;
+            font-family: Gotham Book;
             background: $filterJouner;
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 15px;
-            height: 15px;
+            width: 20px;
+            height: 20px;
             border-radius: 50%;
             margin: auto;
-            margin-right: 20px;
+            margin-right: 2px;
         }
     }
 }

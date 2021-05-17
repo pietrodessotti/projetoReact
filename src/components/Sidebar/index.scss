@@ -1,50 +1,58 @@
 @import "../../style/variables.scss";
 
-#sidebar {
-    background: transparent linear-gradient(90deg, #00e1ff 0%, #117eff 100%) 0% 0% no-repeat padding-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-#sidebar-menu {
-    background: $sidebarColor;
-    width: 70px;
+#sidebar {
     height: 100%;
+    z-index: 3;
+    position: fixed;
 
-    border-top: 4px solid red;
-    border-bottom: 4px solid red;
+    #sidebar-menu {
+        border-top: 3px solid $borderBlue2;
+        box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.5);
+        border-bottom: 3px solid $borderBlue2;
+        background: $sidebarColor;
+        width: 70px;
+        height: 100%;
 
-    .logo {
+
+        .logo {
+            img {
+                width: 30px;
+                padding-top: 15px;
+                padding-bottom: 40px;
+            }
+        }
+
         img {
-            width: 50px;
-            max-width: 30px;
-            padding-top: 15px;
-            padding-bottom: 40px;
-        }
-    }
+            &:hover {
+                cursor: pointer;
+            }
 
-    img {
-        &:hover {
-            cursor: pointer;
+            filter: invert(100%);
+            display: block;
+            width: 20px;
+            margin: 25px auto;
         }
 
-        filter: invert(100%);
-        display: block;
-        width: 20px;
-        margin: 25px auto;
-    }
-
-    li {
-        list-style: none;
-    }
-
-    .separator li {
-        &:last-child {
-            width: 35%;
-            margin: auto;
-            border-bottom: 2px solid $colorBlue;
+        li {
+            list-style: none;
         }
-    }
 
-    .footer-menu {
-        margin-top: 200px;
+        .separator li {
+            &:last-child {
+                width: 35%;
+                margin: auto;
+                border-bottom: 2px solid $colorBlue;
+            }
+        }
+
+        .footer-menu {
+            margin-top: 200px;
+        }
     }
 }

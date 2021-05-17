@@ -1,5 +1,5 @@
 import React from 'react';
-import 'index.css';
+import './index.css';
 
 
 const TableJourney = ({ journey }) => (
@@ -14,12 +14,13 @@ const TableJourney = ({ journey }) => (
                         <th>Status</th>
                     </tr>
                 </thead>
-                {/* <tbody id="tableFinances">
+                <tbody id="tableJourney">
                     <tr><td>{journey.name}</td>
                         <td>{journey.recipients}</td>
                         <td>{journey.success}</td>
-                        <td>{journey.status}</td></tr>
-                </tbody> */}
+                        <td>{journey.status}</td>
+                    </tr>
+                </tbody>
             </table>
         </section>
     </div>

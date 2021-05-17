@@ -1,36 +1,52 @@
 /* ========= COLORS INDEX ======= */
 /* ======= COLORS SVG ======== */
+@font-face {
+  font-family: Gotham;
+  src: url(../../assets/fonts/Gotham-Bold.ttf);
+}
+
+* {
+  font-family: Gotham;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 #journey {
   position: absolute;
   top: 140px;
 }
 
 #journey #data-table {
-  margin-left: 350px;
+  min-width: 750px;
+  margin-left: 500px;
   margin-top: 20px;
   border-spacing: 0 5px;
   font-size: 13px;
 }
 
 #journey #data-table thead th {
+  font-family: Gotham Book;
+  width: auto;
   padding-left: 10px;
   text-align: justify;
   color: #9196AB;
 }
 
-#journey #data-table #tableFinances td {
+#journey #data-table #tableJourney td {
+  font-family: Gotham Book;
   background: white;
-  width: 200px;
   color: #3E4157;
   padding: 10px;
-  margin: 50px;
 }
 
-#journey #data-table #tableFinances td:first-child {
+#journey #data-table #tableJourney td:first-child {
+  font-family: Gotham;
   border-radius: 5px 0 0 5px;
 }
 
-#journey #data-table #tableFinances td:last-child {
+#journey #data-table #tableJourney td:last-child {
   border-radius: 0 5px 5px 0;
 }
 /*# sourceMappingURL=index.css.map */

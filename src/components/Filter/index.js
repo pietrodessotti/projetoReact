@@ -1,5 +1,5 @@
 import React from 'react';
-import 'index.css';
+import './index.css';
 
 import all from '../../assets/icons/table.svg';
 import paperPlane from '../../assets/icons/paper-plane.svg';
@@ -13,7 +13,8 @@ import check from '../../assets/icons/check.svg';
 const Filter = () => (
     <div id="filter">
         <h1>Jornadas</h1>
-
+        <div className="active"></div>
+        <div className="disabled"></div>
         <div className="options">
             <img src={all} alt='Icone Todos os filtros do Projeto D1' />
             <p>Todas</p>
