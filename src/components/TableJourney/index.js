@@ -1,17 +1,6 @@
 import React from 'react';
 import './index.css';
 
-import all from '../../assets/icons/table.svg';
-import paperPlane from '../../assets/icons/paper-plane.svg';
-import playCircle from '../../assets/icons/play-circle.svg';
-import pen from '../../assets/icons/pen.svg';
-import bed from '../../assets/icons/bed.svg';
-import check from '../../assets/icons/check.svg';
-
-const icons = [all, paperPlane, playCircle, pen, bed, check];
-
-
-
 const TableJourney = ({ journeys }) => (
     <div className='container'>
         <section id='journey'>

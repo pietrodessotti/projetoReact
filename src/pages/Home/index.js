@@ -3,7 +3,7 @@ import TableJourney from 'components/TableJourney';
 import SidebarMenu from 'components/Sidebar';
 import Header from 'components/Header';
 import Filter from 'components/Filter';
-
+ 
 const initialState = {
     journeysTable: [],
     journeysInfo: new Array(6),
@@ -32,7 +32,8 @@ const reducer = (state, action) => {
                 ...state,
                 journeysApplied: [
                     ...state.journeysApplied.map((value, index) =>
-                        action.playload.index === index ? !value : value
+                        action.playload.index === index 
+                        ? !value : value
                     ),
                 ],
             };
@@ -56,14 +57,15 @@ const Home = () => {
 
     const handleClickJourney = async (index) => {
         if (!journeys.journeysTable[index]) {
-            getJourney(index);
+            getJourney(index);  
         }
         dispatch({ type: 'HANDLE_CLICK_JOURNEY', playload: { index } });
     };
 
     useEffect(() => {
         const getJourneysInfo = async () => {
-            await fetch(`https://api-d1-test.herokuapp.com/api/filter`).then(async (res) => res.json()).then((dataTransformed) => {
+            await fetch(`https://api-d1-test.herokuapp.com/api/filter`)
+            .then(async (res) => res.json()).then((dataTransformed) => {
                 dispatch({
                     type: 'GET_JOURNEYS_INFO',
                     playload: dataTransformed,
